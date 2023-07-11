@@ -207,7 +207,6 @@ a{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    /*taşma olduğunda aşağı kaydırı responsive için güzel*/
 }
 
 .featured-buttons button {
@@ -218,7 +217,6 @@ a{
     cursor: pointer;
     display: flex;
     column-gap: 10px;
-    /*column-gap verebilmek için display:flex; eklenmeli*/
     font-size: 16px;
     font-weight: bold;
 }
@@ -271,7 +269,6 @@ a{
 .movie-item {
     position: relative;
     height: fit-content;
-    /*!-*/
 }
 
 .movie-item:hover .movie-item-title,
@@ -312,7 +309,6 @@ a{
     left: 50px;
     display: flex;
     column-gap: 20px;
-    /*Bu kodun çalışması için display: flex; gerekli*/
     opacity: 0;
     transition: var(--trans);
 }
@@ -458,6 +454,21 @@ footer .social-media {
         justify-content: center;
         align-items: center;
     }
+
+}
+
+@media (max-width:576px) {
+    .bi-list{
+        font-size: 15px;
+        display: block;
+
+    }
+
+    .logo {
+        color: rgb(255, 70, 70);
+        font-size: 16px;
+    }
+
 
 }
 
